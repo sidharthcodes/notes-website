@@ -1,0 +1,14 @@
+{
+  "name": "notes-website",
+  "version": "1.0.0",
+  "description": "notes providing website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sidharth",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
