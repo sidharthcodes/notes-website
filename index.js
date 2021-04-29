@@ -10,17 +10,8 @@ const hostname = 'localhost';
 const port = process.env.PORT || 3000;
 
 const app = express();
-app.use(morgan('dev')); // shows information about headers;
+app.use(morgan('dev'));
 
-
-// app.use('/dishes',dishRouter);
-// app.use('/dishes/:dishId',dishRouter);
-// app.use('/promotions',promoRouter);
-// app.use('/promotions/promoId',promoRouter);
-// app.use('/leaders',leaderRouter);
-// app.use('/leaders/leaderId',leaderRouter);
-
-// app.use(express.static(__dirname+'/public'));
 app.use(express.static(__dirname)); // search the given directory for serving the static pages;
 
 app.use((req,res,next) => {		// will use in creating a server;
