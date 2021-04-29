@@ -6,7 +6,7 @@ const morgan = require('morgan');
 // const promoRouter = require('./routes/promoRouter');
 // const leaderRouter = require('./routes/leaderRouter');
 
-const hostname = 'localhost';
+// const hostname = 'localhost';
 const port = process.env.PORT || 3000;
 
 const app = express();
@@ -22,6 +22,7 @@ app.use((req,res,next) => {		// will use in creating a server;
 
 const server = http.createServer(app); 	// creates a server;
 
-server.listen(port,hostname,()=>{		//listening to the requests at the localhost:port;
-	console.log(`Listening to http://${hostname}:${port}`);
+server.listen(port,()=>{		//listening to the requests at the localhost:port;
+	// console.log(`Listening to http://${hostname}:${port}`);
+	console.log(`Listening to Port: ${port}`);
 });
