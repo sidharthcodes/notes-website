@@ -2,11 +2,6 @@ const express = require('express');
 const http = require('http');
 const morgan = require('morgan');
 
-// const dishRouter = require('./routes/dishRouter');
-// const promoRouter = require('./routes/promoRouter');
-// const leaderRouter = require('./routes/leaderRouter');
-
-// const hostname = 'localhost';
 const port = process.env.PORT || 3000;
 
 const app = express();
